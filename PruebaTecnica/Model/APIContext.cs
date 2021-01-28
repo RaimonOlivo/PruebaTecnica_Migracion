@@ -21,6 +21,15 @@ namespace PruebaTecnica.Model
             };
 
             modelBuilder.Entity<Estados>().HasData(estados);
+
+            modelBuilder.Entity<Personas>().HasKey(k => k.id);
+            modelBuilder.Entity<Solicitud>().HasKey(k => k.id);
+
+            modelBuilder.Entity<Personas>().Property(p => p.id).ValueGeneratedOnAdd();
+            modelBuilder.Entity<Solicitud>().Property(p => p.id).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Solicitud>().HasOne(p => p.Persona);
+            modelBuilder.Entity<Solicitud>().HasOne(e => e.Estado);
         }
     }
 }

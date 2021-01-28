@@ -8,8 +8,8 @@ namespace PruebaTecnica.Model
     public class Solicitud
     {
         public int id { get; set; }
-        public int PersonaId { get; set; }
-        public int EstadoId { get; set; }
+        public Personas Persona { get; set; }
+        public Estados Estado { get; set; }
         public DateTime FechaCreacion { get; set; }
     }
 }

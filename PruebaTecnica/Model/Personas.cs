@@ -13,7 +13,8 @@ namespace PruebaTecnica.Model
         public DateTime FechaNacimiento { get; set; }
         public string Pasaporte { get; set; }
         public string Direccion { get; set; }
-        public int Sexo { get; set; }
+        // TODO: Change to string, M || F
+        public string Sexo { get; set; }
         public string Foto { get; set; }
 
     }

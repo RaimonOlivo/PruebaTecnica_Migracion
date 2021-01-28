@@ -13,5 +13,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\userimg\" />
+  </ItemGroup>
+
 
 </Project>
