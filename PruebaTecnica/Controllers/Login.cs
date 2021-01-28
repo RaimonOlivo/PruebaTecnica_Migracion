@@ -21,7 +21,7 @@ namespace PruebaTecnica.Controllers
             {
                 return new LoginResult { loginResult = "success" };
             }
-            return new LoginResult { loginResult = "failure" };
+            return NotFound();
         }
     }
 

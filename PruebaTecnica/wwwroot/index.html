@@ -9,6 +9,27 @@
 
     
     <img src="img/logo.png" />
+
+    <div class="login">
+        <table>
+            <tr>
+                <td>USERNAME</td>
+                <td><input type="text" id="loginUsername" /></td>
+            </tr>
+            <tr>
+                <td>PASSWORD</td>
+                <td><input type="password" id="loginPassword" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="loginBtn" value="LOGIN" /></td>
+            </tr>
+        </table>
+        <hr />
+    </div>
+
+
+
     <title>CRUD</title>
     <div class="contenedor_ _todo">
         <div class="caja_ _trasera">
@@ -17,38 +38,38 @@
             <form>
                 <div class="mb-3">
                   <label  class="form-label">ID</label>
-                  <input type="Texto" placeholder="Cedula " >
+                  <input type="text" placeholder="Cedula " >
                   
                 </div>
                 <div class="mb-3">
                     <label  class="form-label">Nombre</label>
-                    <input type="Nombre" placeholder="Cedula " >
+                    <input type="text" placeholder="Cedula " >
                     
                   </div>
                   <div class="mb-3">
                     <label  class="form-label">Fecha</label>
-                    <input type="Fecha" placeholder="Cedula " >
+                    <input type="date" placeholder="Cedula " >
                     
                   </div>
                   <div class="mb-3">
                     <label  class="form-label">Pasaporte</label>
-                    <input type="Pasaporte" placeholder="Cedula " >
+                    <input type="text" placeholder="Cedula " >
                     
                   </div>
                   <div class="mb-3">
                     <label  class="form-label">Direccion</label>
-                    <input type="Direccion" placeholder="Cedula " >
+                    <input type="text" placeholder="Cedula " >
                     
                   </div>
                   <div class="mb-3">
                     <label  class="form-label">Sexo</label>
-                    <input type="checkbox" id="cbox1" value="first_checkbox"> <input type="checkbox" id="cbox1" value="first_checkbox">
+                    <input type="checkbox" id="cbox1" value="M"> <input type="checkbox" id="cbox1" value="F">
                     
                   </div>
                  
                 
               </form>
-             <button> Crear</button>
+             <button id="personasCreateBtn"> Crear</button>
              <button> Editar</button>
              <button> Eliminar</button>
              
